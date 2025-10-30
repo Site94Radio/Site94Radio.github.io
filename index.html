@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site-94 Radio</title>
+  <title>Access Granted</title>
   <style>
     body {
-      background-color: #0a0a0a;
+      background-color: #000;
       color: #00ffcc;
       font-family: 'Share Tech Mono', monospace;
       text-align: center;
-      padding-top: 100px;
+      margin-top: 200px;
     }
-    .blink {
-      animation: blink 1s infinite;
-    }
-    @keyframes blink {
-      50% { opacity: 0; }
-    }
+    .blink { animation: blink 1s infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
   </style>
+  <script>
+    // Redirect after 4 seconds
+    setTimeout(function() {
+      window.location.href = "home.html";
+    }, 4000);
+  </script>
 </head>
 <body>
   <h1>ACCESS GRANTED</h1>
-  <p class="blink">Welcome, Site 94 Personnel.</p>
-  <p>Initializing Site-94 Radio...</p>
+  <p class="blink">Welcome, Site-94 Personnel...</p>
+  <p>Initializing Site-94 systems...</p>
 </body>
 </html>
